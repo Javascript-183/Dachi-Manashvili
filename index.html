@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Movie</title>
+    <link rel="shortcut icon" href="./img/logo.webp" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="./index.html"><img class="logo" src="./img/logo.webp" alt="Logo"></a>
+            <button class="burger" onclick="toggleMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            
+            <div class="menu" id="menu">
+                <a href="./index.html"><i class="fa-solid fa-house"></i> მთავარი</a>
+                <a href="./movies.html"><i class="fa-solid fa-video"></i> ფილმები</a>
+                <a href="./about.html"><i class="fa-solid fa-users"></i> ჩვენ შესახებ</a>
+                <a href="./contact.html"><i class="fa-solid fa-address-card"></i> კონტაქტი</a>
+                <button class="login-button">
+                    <a href="./login.html"><i class="fa-solid fa-right-to-bracket"></i> შესვლა</a>
+                </button>
+            </div>
+        </nav>
+    </header>
+    
+    
+
+    <section class="slider-container">
+        <div class="slides">
+            <img src="./img/snowfall.jpg" alt="Slide 1">
+            <img src="./img/from.jpg" alt="Slide 2">
+            <img src="./img/startup.jpg" alt="Slide 3">
+            <img src="./img/action.jpg" alt="Slide 4">
+        </div>
+    </section>
+    <section class="movies">
+        <h2>უახლესი ფილმები</h2>
+        <div id="movies-list"></div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 ყველა უფლება დაცულია</p>
+            <div class="contact-info">
+                <p><i class="fa-solid fa-phone"></i> ტელ: +995 599 123 456</p>
+                <p><i class="fa-solid fa-envelope"></i> ელფოსტა: contact@gmail.com</p>
+                <p><i class="fa-solid fa-map-marker-alt"></i> ლოკაცია: თბილისი, საქართველო</p>
+            </div>
+        </div>
+    </footer>
+    
+    
+    <script src="./js/api.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/showmovies.js"></script>
+</body>
+</html>
